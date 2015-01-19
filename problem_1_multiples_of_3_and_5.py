@@ -19,5 +19,5 @@ def frizz_buzz(number):
     @param n -- a non-negative integer
     @return integer
     """
-    l = lambda x: x if (x % 5 == 0) or (x % 3 == 0) else 0
-    return sum(map(l, range(number)))
+    mutliples_of_three_and_five = lambda x: (x % 5 == 0) or (x % 3 == 0)
+    return sum(filter(mutliples_of_three_and_five, range(number)))
