@@ -1,4 +1,4 @@
-def test_frizz_buzz():
+def test_get_sum_even_fib_terms():
     assert get_sum_even_fib_terms(10) == 10
 
 
