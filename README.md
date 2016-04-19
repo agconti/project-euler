@@ -1,8 +1,8 @@
 # project-euler
-My solutions to the Project Euler questions. 
+Solutions to the Project Euler questions.
 
 Run tests with:
 
 ```
-py.test -q <filename>.py
+py.test -q problem_{{ number }}.py
 ```
