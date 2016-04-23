@@ -10,7 +10,7 @@ def is_evenly_divisible(value, low, high):
     return True
 
 
-def infite_seq():
+def infinite_seq():
     i = 1
 
     while True:
@@ -19,6 +19,6 @@ def infite_seq():
 
 
 def get_smallest_evenly_divisible_by(low, high):
-    for i in infite_seq():
+    for i in infinite_seq():
         if is_evenly_divisible(i, low, high):
             return i
