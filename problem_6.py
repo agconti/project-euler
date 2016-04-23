@@ -6,5 +6,5 @@ def sum_square_difference(low, high):
     high += 1
 
     sum_squares = pow(sum(xrange(low, high)), 2)
-    square_sum = sum(map(lambda num: num * num, xrange(low, high)))
+    square_sum = sum(map(lambda num: pow(num, 2), xrange(low, high)))
     return sum_squares - square_sum
