@@ -1,21 +1,21 @@
+import math
+
 def test_triangle_number_factors():
     assert  get_triangle_number_with_factors_greater_than(5) == 28
+    assert get_triangle_number_with_factors_greater_than(500) == 500
 
-
-# o(n), theta(n), omega(n)
+# o(1), theta(1), omega(1)
 def get_triangle_number(n):
-    start = 1
-    end = n + 1
-    return sum(xrange(start, end))
+    return (n * (n + 1)) / 2
 
 
 # o(n), theta(n), omega(1)
 def num_factors_over_limit(num, limit):
-    end = num + 1
-    num_factors = 0
-    for i in xrange(1, end):
+    end = int((math.sqrt(num)) + 1)
+    num_factors = 2
+    for i in xrange(2, end):
         if num % i  == 0:
-            num_factors += 1
+            num_factors += 2
         if num_factors > limit:
             return True
     return False
