@@ -9,7 +9,7 @@ def get_triangle_number(n):
     return (n * (n + 1)) / 2
 
 
-# o(n), theta(n), omega(1)
+# o(log(n)), theta(log(n)), omega(1)
 def num_factors_over_limit(num, limit):
     end = int((math.sqrt(num)) + 1)
     num_factors = 2
